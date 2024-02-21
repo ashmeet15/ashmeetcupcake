@@ -1,1 +1,36 @@
-<p>flavour works!</p>
+
+
+<div class="flavour-container">
+  <a class="back-arrow" (click)="cancel()">&#8592;</a>
+  <h2>Select Cupcake Flavor</h2>
+  <div class="flavour-options">
+    <label>
+      <input type="radio" name="flavour" value="chocolate"> Chocolate
+    </label>
+    <label>
+      <input type="radio" name="flavour" value="vanilla"> Vanilla
+    </label>
+    <label>
+      <input type="radio" name="flavour" value="strawberry"> Strawberry
+    </label>
+    <label>
+      <input type="radio" name="flavour" value="cheesecake"> Cheesecake
+    </label>
+    <label>
+      <input type="radio" name="flavour" value="Coffee"> Coffee
+    </label>
+
+
+    <!-- Subtotal calculation -->
+    <div class="subtotal">
+      <p>Subtotal: {{ subtotal | currency:'USD':'symbol' }}</p>
+    </div>
+  </div>
+
+  <!-- Buttons -->
+  <div class="button-container">
+    <button (click)="cancel()">Cancel</button>
+
+    <button (click)="goNext()">Next</button>
+  </div>
+</div>

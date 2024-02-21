@@ -1,0 +1,46 @@
+flavour css
+
+
+.flavour-container {
+  text-align: center;
+  margin-top: 50px;
+  background-color: #b39ddb;
+  padding: 20px;
+}
+
+.flavour-options {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+.subtotal {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.button-container {
+  margin-top: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #ff8c78;
+}
