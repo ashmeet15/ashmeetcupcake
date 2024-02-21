@@ -1,1 +1,18 @@
-<p>order works!</p>
+
+
+<div class="order-container">
+  <a class="back-arrow" (click)="goBack()">&#8592;</a>
+  <h2>Your Cupcake Order</h2>
+  <div class="order-details">
+    <p>Number of Cupcakes: {{ quantity }}</p>
+    <p>Selected Flavor: {{ selectedFlavour }}</p>
+    <p>Subtotal: {{ subtotal | currency:'USD':'symbol' }}</p>
+  </div>
+
+  <!-- Buttons -->
+  <div class="button-container">
+    <button (click)="cancel()">Cancel</button>
+    <button (click)="goBack()">Back</button>
+    <button (click)="sendOrder()">Send Order</button>
+  </div>
+</div>
